@@ -24,7 +24,7 @@ var TodoApp = React.createClass({
 				text: 'listen to music'
 			}
 			],
-			showCompleted: false,
+			showComplete: false,
 			searchText: ''
 
 		}
@@ -36,9 +36,9 @@ var TodoApp = React.createClass({
 			todos: newtodos
 		});*/
 	},
-	handleSearch: function(showCompleted, searchText){
+	handleSearch: function(showComplete, searchText){
 		this.setState({
-			showCompleted: showCompleted,
+			showComplete: showComplete,
 			searchText: searchText.toLowerCase()
 		})
 	},
