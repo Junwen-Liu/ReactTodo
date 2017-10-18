@@ -28,8 +28,8 @@ describe('Todo Search', ()=>{
 		var spy = expect.createSpy();
 		var todosearch = TestUtils.renderIntoDocument(<TodoSearch onSearch={spy}/>);
 
-		todosearch.refs.showComplete.checked = checkedstatus;
-		TestUtils.Simulate.change(todosearch.refs.showComplete);
+		todosearch.refs.showCompleted.checked = checkedstatus;
+		TestUtils.Simulate.change(todosearch.refs.showCompleted);
 
 		expect(spy).toHaveBeenCalledWith(checkedstatus, '');
 
